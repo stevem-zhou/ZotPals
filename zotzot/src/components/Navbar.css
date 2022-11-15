@@ -1,0 +1,47 @@
+.logo {
+  width: 8%;
+  max-width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5%;
+  box-shadow: 0px 5px 7.4564px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  margin-bottom: 2%;
+  position: sticky;
+  top: 0px;
+  /* background-color:rgb(235,232,209); */
+  background-color: rgb(244, 244, 213);
+}
+
+.nav-cata-text {
+  display: flex;
+}
+
+.nav-brand-text {
+  display: flex;
+}
+
+.nav-brand-text a {
+  text-decoration: none;
+}
+
+.nav-brand-text p {
+  text-decoration: none;
+
+  margin-left: 20px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.nav-cata-link {
+  text-decoration: none;
+  color: black;
+  margin-right: 5rem;
+
+  font-weight: 400;
+  font-size: 1.2rem;
+}
