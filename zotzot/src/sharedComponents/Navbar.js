@@ -1,27 +1,28 @@
 import React from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <nav class="navbar">
       <div class="nav-brand-text">
         <img class="logo" src="images/banana.png" alt="" />
-        <a href="landing.html">
+        <Link to="/">
           <p>AntTrade</p>
-        </a>
+        </Link>
       </div>
 
       <div class="nav-cata-text">
         {/* figure out the hrefs to work with react --> routing to different pages */}
-        <a class="nav-cata-link" href="explore.html">
+        <Link class="nav-cata-link" to="/explore">
           <p>Explore</p>
-        </a>
-        <a class="nav-cata-link" href="post.html">
+        </Link>
+        <Link class="nav-cata-link" to="/post">
           <p>Post</p>
-        </a>
-        <a class="nav-cata-link" href="about.html">
+        </Link>
+        <Link class="nav-cata-link" to="/about">
           <p>About</p>
-        </a>
+        </Link>
       </div>
     </nav>
   );
