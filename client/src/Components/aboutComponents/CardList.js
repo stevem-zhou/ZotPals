@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react";//use in about.js
 import Card from "./Card";
 const CardList = ({ Members }) => {
   const array = Members.map((user, i) => {

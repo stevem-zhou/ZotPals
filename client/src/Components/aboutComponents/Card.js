@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react";//use in cardlist
 
 const Card = ({ id, name, email, img }) => {
   return (
