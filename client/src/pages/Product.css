@@ -1,0 +1,84 @@
+body {
+  font-family: "Inter";
+  background-color: #fff5d9;
+}
+
+/* NAV BAR */
+.logo {
+  width: 8%;
+  max-width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5%;
+  margin-bottom: 2%;
+  box-shadow: 0px 5px 7.4564px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  background-color: rgb(244, 244, 213);
+}
+.nav-cata-text {
+  display: flex;
+}
+
+.nav-brand-text {
+  display: flex;
+}
+
+.nav-brand-text a {
+  text-decoration: none;
+}
+
+.nav-brand-text p {
+  text-decoration: none;
+
+  margin-left: 20px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.nav-cata-link {
+  text-decoration: none;
+  color: black;
+  margin-right: 5rem;
+
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+/* NAV BAR */
+
+/* PRODUCT INFO */
+
+.info-container {
+  display: flex;
+  justify-content: center;
+}
+
+.info-img {
+  width: 30%;
+  border-radius: 10%;
+}
+
+.info-description {
+  margin-left: 2%;
+  padding: 2%;
+  width: 20%;
+  background-color: white;
+  border-radius: 7%;
+}
+
+.info-btn {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5%;
+}

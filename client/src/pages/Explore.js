@@ -13,6 +13,14 @@ export default function Explore() {
         <ExploreListing />
         <ExploreListing />
         <ExploreListing />
+        <ExploreListing />
+        <ExploreListing />
+        <ExploreListing />
+        <ExploreListing />
+        <ExploreListing />
+        <ExploreListing />
+        <ExploreListing />
+        <ExploreListing />
       </div>
       <Footer />
     </body>

@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Explore from "./pages/Explore";
 import Post from "./pages/Post";
 import About from "./pages/About";
+import Product from "./pages/Product";
 
 function App() {
   // let x = data.map(function (element) {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/explore" element={<Explore />} />
           <Route path="/post" element={<Post />} />
           <Route path="/about" element={<About />} />
+          <Route path="/item_info/:productId" element={<Product />} />
         </Routes>
       </div>
       {/* <h1 className="hello-text">Hello</h1> */}
