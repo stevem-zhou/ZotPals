@@ -1,4 +1,5 @@
 import React from "react";
+import "./exploreSummary.css";
 
 export default function exploreSummary() {
   return (
