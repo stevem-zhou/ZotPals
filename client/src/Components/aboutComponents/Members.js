@@ -1,4 +1,4 @@
-export const Members =[
+export const Members =[//data for member, use in cardlist
   {
     id:1,
     name:"Jessie He",
