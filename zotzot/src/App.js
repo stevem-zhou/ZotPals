@@ -1,8 +1,8 @@
 import logo from "./logo.svg";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Navbar from "./sharedComponents/Navbar";
-import Members from "./aboutComponents/Members";
+import Navbar from "./Components/sharedComponents/Navbar"
+import Members from "./Components/aboutComponents/aboutMembers"
 import data from "./data";
 import Home from "./pages/Home";
 import Explore from "./pages/Explore";

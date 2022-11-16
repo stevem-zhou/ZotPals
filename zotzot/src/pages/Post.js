@@ -1,3 +1,8 @@
-export default function Post(){
-    return <h1>Post</h1>
+export default function Post() {
+  return (
+    <div id="listText">
+      <h3>List an Item</h3>
+    </div>
+    
+  );
 }

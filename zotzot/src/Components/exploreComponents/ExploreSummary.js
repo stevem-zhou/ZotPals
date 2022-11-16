@@ -1,7 +1,7 @@
 import React from "react";
-import "./exploreSummary.css";
+import "./ExploreSummary.css";
 
-export default function exploreSummary() {
+export default function ExploreSummary() {
   return (
     <section class="summary">
       <h2>Explore All The Different Items You Can Borrow!</h2>

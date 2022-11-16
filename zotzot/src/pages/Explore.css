@@ -1,0 +1,15 @@
+body{
+    /* font-family: "Inter"; */
+    background-color: #FFF5D9;
+    font-family: 'Raleway', sans-serif;
+}
+
+.posting{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+    flex: 1 1 auto;
+    margin: 0 10%;
+}

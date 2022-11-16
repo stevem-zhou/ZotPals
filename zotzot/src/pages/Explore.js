@@ -1,10 +1,15 @@
-import exploreSummary from "../exploreComponents/exploreSummary";
+import React from "react";
+import ExploreListing from "../Components/exploreComponents/ExploreListing";
+import ExploreSummary from "../Components/exploreComponents/ExploreSummary";
+import "./Explore.css"
 
 export default function Explore() {
-  //   return <exploreSummary />;
   return (
-    <>
-      <exploreSummary></exploreSummary>
-    </>
+    <body>
+      <ExploreSummary />
+      <div className="posting">
+        <ExploreListing />
+      </div>
+    </body>
   );
 }
