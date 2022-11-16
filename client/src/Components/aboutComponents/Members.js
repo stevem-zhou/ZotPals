@@ -19,11 +19,5 @@ export const Members =[
     name:"Dang",
     email:"Dang's email",
     img:"https://robohash.org/1"
-  },
-  {
-    id:5,
-    name:"stelk",
-    email:"flkwemfe",
-    img:"klkm"
   }
 ]
