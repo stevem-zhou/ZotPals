@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -17,16 +19,55 @@
 }
 
 .container-text {
-  text-align: left;
+  text-align: center;
   width: 40%;
+  background-color: #d4a373;
+  color: #7f5539;
+  text-shadow:
+    /* White glow */
+    0 0 7px rgb(223, 215, 215),
+    0 0 10px rgb(51, 49, 49),
+    0 0 21px rgb(228, 225, 225);
+    /* Green glow */
+    /* 0 0 42px #f1cb6a,
+    0 0 82px #f1cb6a,
+    0 0 92px #f1cb6a,
+    0 0 102px #f1cb6a,
+    0 0 151px #f1cb6a; */
+  border-radius: 8%;
 }
 
-.posting{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 12px;
-    flex: 1 1 auto;
-    margin: 0 ;
+.container-text h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  /* color: rgb(174, 185, 138);
+  text-shadow:
+    /* White glow */
+    /* 0 0 7px rgb(34, 32, 32),
+    0 0 10px rgb(51, 49, 49),
+    0 0 21px rgb(14, 13, 13), */ 
+    /* Green glow */
+    /* 0 0 42px #f5d0c5,
+    0 0 82px #f5d0c5,
+    0 0 92px #f5d0c5,
+    0 0 102px #f5d0c5,
+    0 0 151px rgb(63, 73, 70); */
+}
+
+
+.posting {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+  flex: 1 1 auto;
+  margin: 0;
+}
+
+.latestText {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
 }

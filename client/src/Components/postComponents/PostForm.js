@@ -50,41 +50,68 @@ export default function PostForm() {
     <section className="collectorBox">
       <form onSubmit={uploadInfo} method="get" className="infoForm">
         <label for="name">Name of Item:</label>
-        <input onChange={updateName} type="text" name="name" id="name" required />
-        <p>Upload Item Photo:</p>
-        <img
-          id="photo"
-          src={require("../../images/mouse_eat.png")}
-          alt="mouse eat alone"
+        <br />
+        <input
+          onChange={updateName}
+          type="text"
+          name="name"
+          id="name"
+          required
         />
-        <input onChange={updateImage}
+        <p>Enter Item Photo URL:</p>
+        <input
+            onChange={updateImage}
+            type="url"
+            id="photoinput"
+            name="image"
+            accept="image/jpeg, image/png, image/jpg"
+            required
+          />
+        <div className="imageContainer">
+          <img
+            id="photo"
+            src={require("../../images/mouse_eat.png")}
+            alt="mouse eat alone"
+          />
+        </div>
+
+        {/* <input onChange={updateImage}
           type="file"
           id="photoinput"
           name="image"
           accept="image/jpeg, image/png, image/jpg"
           required
-        />
+        /> */}
 
         <label for="description">Description:</label>
-        <textarea onChange={updateDescription}
+        <br />
+        <textarea
+          onChange={updateDescription}
           name="description"
           id="description"
-          cols="10"
-          rows="10"
+          cols="5"
+          rows="5"
           required
         ></textarea>
 
-        <label for="contactInfo">Contact Information:</label>
-        <textarea onChange={updateContactInfo}
+        <label for="contactInfo">Contact Information (Email):</label>
+        <br />
+        <input
+          type="email"
+          onChange={updateContactInfo}
           name="contactInfo"
           id="contactInfo"
-          cols="10"
-          rows="10"
           required
-        ></textarea>
+        ></input>
 
         <label for="duration">Duration:</label>
-        <select onChange={updateDuration} name="duration" id="duration" required>
+        <br />
+        <select
+          onChange={updateDuration}
+          name="duration"
+          id="duration"
+          required
+        >
           <option value="">--Please choose an option--</option>
           <option value="oneDay">1 Day</option>
           <option value="twothreeDay">2-3 Days</option>
