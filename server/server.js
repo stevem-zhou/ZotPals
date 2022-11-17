@@ -4,6 +4,7 @@ const express = require("express");
 const { MongoError } = require("mongodb");
 const app = express();
 const mongoose = require("mongoose");
+const { reset } = require("nodemon");
 const itemListing = require("./models/itemListing_model");
 
 mongoose.connect(process.env.DB_URL, {
@@ -43,7 +44,22 @@ app.post("/post", async function (req, res) {
 
 // app.get("/product/:productId", async function (req, res) {});
 
-// app.get("/home", async function (req, res) {});
+app.get("/home", async function (req, res) {
+  // get the top three
+  const items = await itemListing.find({})
+  let first, second, third;
+  for (let i = 0; i < items.length; i++) {
+    if (i == items.length - 3) { first = items[i]; }
+    if (i == items.length - 2) { second = items[i]; }
+    if (i == items.length - 1) {
+      third = items[i];
+    }
+  }
+
+  let top_three = [first, second, third];
+  res.send(top_three);
+
+});
 
 app.listen(3001, function () {
   console.log("Server Started");
