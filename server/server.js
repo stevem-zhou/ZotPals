@@ -7,6 +7,9 @@ const mongoose = require("mongoose");
 const { reset } = require("nodemon");
 const itemListing = require("./models/itemListing_model");
 const cors = require("cors");
+const token = require('./models/token');
+const sendEmail = require('./routes/sendEmail');
+const crypto = require('crypto');
 
 mongoose.connect(process.env.DB_URL, {
   useNewUrlParser: true,
@@ -19,6 +22,7 @@ db.once("open", () => console.log("Connected to Database"));
 
 app.use(express.json());
 app.use(cors());
+
 
 // connected
 // explore get request
