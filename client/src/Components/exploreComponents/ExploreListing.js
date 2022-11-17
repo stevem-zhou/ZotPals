@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./ExploreListing.css";
 import { Link } from "react-router-dom";
+import 'tachyons';
 
 // eventually use props and replace the string inside the require src
 export default function ExploreListing(props) {
