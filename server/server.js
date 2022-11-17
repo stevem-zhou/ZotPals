@@ -23,7 +23,7 @@ app.use(cors());
 // connected
 // explore get request
 app.get("/explore", async function (req, res) {
-  const items = await itemListing.find({});
+  const items = await itemListing.find();
   res.send(items);
 });
 

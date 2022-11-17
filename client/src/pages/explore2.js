@@ -8,8 +8,8 @@ const explore2 = () => {
     <div className="tc">
       <h1>Explore All The Different Items You Can Borrow!</h1>
       <p>
-        Ranging from clothing to electronics to stationary items, look through
-        the latest drops from your fellow peers! Invest in Anteater picks and
+        Ranging from clothing to electronics to stationary items, look through <br />
+        the latest drops from your fellow peers! Invest in Anteater picks and <br />
         support each other along the way.
       </p>
       <CardList Items={Items} />

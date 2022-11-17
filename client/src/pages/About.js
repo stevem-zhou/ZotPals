@@ -14,9 +14,9 @@ const About = () => {
       <div className="tc">
         <h1>About Us</h1>
         <p>
-          Focused on creating a community where we are able to create
-          relationships and ease the hardships that Anteaters face, we as
-          creators have developed an easy-to-use platform with inspiration from
+          Focused on creating a community where we are able to create <br />
+          relationships and ease the hardships that Anteaters face, we as <br />
+          creators, have developed an easy-to-use platform with inspiration from<br />
           the barter system of trade.
         </p>
         <CardList Members={Members} />
