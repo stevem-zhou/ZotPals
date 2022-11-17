@@ -4,6 +4,7 @@ const express = require("express");
 const { MongoError } = require("mongodb");
 const app = express();
 const mongoose = require("mongoose");
+const { reset } = require("nodemon");
 const itemListing = require("./models/itemListing_model");
 const cors = require("cors");
 
@@ -18,9 +19,6 @@ db.once("open", () => console.log("Connected to Database"));
 
 app.use(express.json());
 app.use(cors());
-
-const itemListingRouter = require("./routes/itemListing");
-app.use("/itemListing", itemListingRouter);
 
 // connected
 // explore get request
