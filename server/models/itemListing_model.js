@@ -4,7 +4,7 @@ const itemSchema = new mongoose.Schema({
     name: String,
     image: String,
     description: String,
-    contact: String,
+    contactInfo: String,
     duration: String,
     date: String,
     borrowed: {type: Boolean, default:false},

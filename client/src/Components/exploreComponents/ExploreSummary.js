@@ -3,7 +3,7 @@ import "./ExploreSummary.css";
 
 export default function ExploreSummary() {
   return (
-    <section class="summary">
+    <section className="summary">
       <h2>Explore All The Different Items You Can Borrow!</h2>
       <p>
         Ranging from clothing to electronics to stationary items, look through

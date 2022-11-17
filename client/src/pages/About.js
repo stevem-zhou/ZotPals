@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Members } from "../Components/aboutComponents/Members";
 import CardList from "../Components/aboutComponents/CardList";
 import Footer from "../Components/sharedComponents/Footer";
-import "./About.css"
+import "./About.css";
 import "tachyons";
 
+
 const About = () => {
+
+
   return (
     <>
       <div className="tc">
