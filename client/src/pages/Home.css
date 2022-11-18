@@ -16,12 +16,13 @@
   font-weight: 500;
   font-size: large;
   align-items: center;
+
 }
 
 .container-text {
   text-align: center;
   width: 40%;
-  background-color: #d4a373;
+  background-color: #9f785c;
   color: #7f5539;
   text-shadow:
     /* White glow */
