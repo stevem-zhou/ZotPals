@@ -8,12 +8,6 @@ const mongoose = require("mongoose");
 const { reset } = require("nodemon");
 const itemListing = require("./models/itemListing_model");
 const cors = require("cors");
-<<<<<<< HEAD
-=======
-// const token = require('./models/token');
-// const sendEmail = require('./routes/sendEmail');
-// const crypto = require('crypto');
->>>>>>> refs/remotes/origin/main
 
 mongoose.connect(process.env.DB_URL, {
   useNewUrlParser: true,
@@ -99,7 +93,7 @@ app.put("/product/:id", async function (req, res) {
     borrowed: true,
   });
 
-  // res.send(email);
+  res.send(id);
 });
 
 // connected
