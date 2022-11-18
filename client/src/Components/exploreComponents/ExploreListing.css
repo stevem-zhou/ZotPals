@@ -1,13 +1,14 @@
-.outerPostBox:hover {
-  display: flex;
+.outerPostBox:active {
+  display: inline-flex;
   flex-direction: column;
   align-items: center;
-  background-color: #d4a373;
+  background-color: #CFB997;
   width: 300px;
   height: 350px;
   border-radius: 5%;
   box-shadow: 5px 5px 7.4564px rgba(0, 0, 0, 0.1);
-  margin-top: 3%;
+  margin: 0% 20;
+  gap: 50rem;
 }
 
 .innerPostBox {
@@ -26,7 +27,7 @@
 .caption {
   text-align: center;
   margin-top: 10px;
-  background-color: #f0d3b6;
+  background-color: #FAD6A5;
   height: 75px;
   display: flex;
   justify-content: center;

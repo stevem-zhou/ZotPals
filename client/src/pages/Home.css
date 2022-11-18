@@ -16,16 +16,17 @@
   font-weight: 500;
   font-size: large;
   align-items: center;
+
 }
 
 .container-text {
   text-align: center;
   width: 40%;
-  padding-left: 5%;
+  /* padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 5%; */
 
-  background-color: #d4a373;
+  background-color: #9f785c;
   color: #7f5539;
   text-shadow:
     /* White glow */

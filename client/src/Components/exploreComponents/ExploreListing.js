@@ -7,7 +7,7 @@ import 'tachyons';
 export default function ExploreListing(props) {
   return (
     <Link to={`/item_info/${props._id}`}>
-      <section className="outerPostBox">
+      <section className="outerPostBox ma4">
         <section className="innerPostBox">
           <img
             className="postImage"
