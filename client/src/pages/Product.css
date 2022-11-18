@@ -1,6 +1,8 @@
 body {
-  font-family: "Inter";
-  background-color: #fff5d9;
+  /* font-family: "Inter"; */
+  font-family: "Playfair Display", serif;
+
+  background-color: #FAD6A5;
 }
 
 /* NAV BAR */
@@ -16,7 +18,7 @@ body {
   margin-bottom: 2%;
   box-shadow: 0px 5px 7.4564px rgba(0, 0, 0, 0.1);
   align-items: center;
-  background-color: rgb(244, 244, 213);
+  background-color: #9BA17B;
 }
 .nav-cata-text {
   display: flex;
@@ -70,6 +72,53 @@ body {
 }
 
 .info-btn {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5%;
+}
+
+
+.comment-box{
+  margin-left: 2%;
+  padding: 2%;
+  width: 200px;
+  width: 400px;
+  border-radius: 7%;
+  background-color:white;
+}
+
+.comment-box p{
+  background-color:lightgreen;
+  width: 50%;
+  height: 50px;
+  border-radius: 10%;
+  padding-left: 10px;
+  padding-top: 5px;
+
+}
+
+.comment-input{
+  width: 40%;
+  height: 30px;
+
+}
+
+.infoForm{
+  display: flex;
+  margin-bottom: 10%;
+}
+
+.comment-btn{
+  color: black;
+  width: 20%;
   background-color: #4caf50; /* Green */
   border: none;
   color: white;

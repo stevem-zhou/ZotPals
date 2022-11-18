@@ -9,11 +9,27 @@ export default function Product() {
   const { productId } = useParams();
 
   const [listings, setListings] = useState([]);
+  const [commentsArray, setCommentsArray] = useState([])
+  const [comments, setComments] = useState([]);
+
+  function updateComments(event) {
+    event.preventDefault();
+    setComments(event.target.value);
+  }
+
+  function uploadComment() {
+    axios.post(`${NODE_APP}/product/${productId}`, {
+      newcomments: comments
+    });
+  }
+
 
   async function getData() {
     try {
       const results = await axios.get(`${NODE_APP}/product/${productId}`);
       setListings(results.data);
+      setCommentsArray(results.data.comments)
+    
     } catch (err) {
       console.log(err);
     }
@@ -53,8 +69,31 @@ export default function Product() {
           <button onClick={updateBorrow} className="info-btn">
             ZOT???
           </button>
+
+          
         </div>
+        <div className="comment-box">
+          <h1>Comments:</h1>
+          <form onSubmit={uploadComment} method="get" className="infoForm">
+          <input
+            className="comment-input"
+            onChange={updateComments}
+            type="text"
+            id="commentinput"
+            name="comments"
+            required
+          />
+          <button className="comment-btn" type="submit">
+          POST
+        </button>
+        </form>
+        {commentsArray.map(ele => {
+        return (<p>{ele}</p>)
+        })}
       </div>
+      </div>
+      
+      {console.log(listings.comments)}
     </>
   );
 }

@@ -2,13 +2,10 @@ require("dotenv").config();
 
 const nodeMailer = require("nodemailer");
 const express = require("express");
-// const { MongoError } = require("mongodb");
 const app = express();
 const mongoose = require("mongoose");
-// const { reset } = require("nodemon");
 const itemListing = require("./models/itemListing_model");
 const cors = require("cors");
-// const { update } = require("./models/itemListing_model");
 
 mongoose.connect(process.env.DB_URL, {
   useNewUrlParser: true,
@@ -68,6 +65,17 @@ app.get("/product/:id", async function (req, res) {
   const item = await itemListing.findById(id);
   res.send(item);
 });
+
+//posting a comment in product page
+app.post("/product/:id", async function (req,res){
+  const {newcomments} = req.body
+  const {id } = req.params;
+  const item = await itemListing.findById(id);
+  if (newcomments){
+  item.comments.push(newcomments);}
+  const updatedItem = await itemListing.findByIdAndUpdate(id, {comments:item.comments})
+  res.send(updatedItem);
+})
 
 // connected
 // product page put send email request
@@ -132,11 +140,11 @@ app.put("/explore", async function (req, res) {
     dateObj.getFullYear().toString();
   const items = await itemListing.insertMany([
     {
-      name: "nwin",
+      name: "NWINNNNWIN",
       image:
-        "https://www.gameinformer.com/sites/default/files/styles/full/public/2021/06/04/ef725d8b/ar7tq_1.jpg",
-      description: "VERY BAd SUS NUGGEYT",
-      contactInfo: "412313241234",
+        "https://i1.sndcdn.com/avatars-5YhOoeqkl8R1QTtE-VPEy0Q-t500x500.jpg",
+      description: "VNUGGEYT",
+      contactInfo: "431",
       duration: "23 days",
       date: currentDate,
     },
