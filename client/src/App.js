@@ -9,6 +9,7 @@ import Explore from "./pages/Explore";
 import Post from "./pages/Post";
 import About from "./pages/About";
 import Product from "./pages/Product";
+import Verification from "./pages/Verification";
 
 function App() {
   // let x = data.map(function (element) {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/post" element={<Post />} />
           <Route path="/about" element={<About />} />
           <Route path="/item_info/:productId" element={<Product />} />
+          <Route path="/verification/:productId" element={<Verification />} />
         </Routes>
       </div>
       {/* <h1 className="hello-text">Hello</h1> */}

@@ -30,7 +30,7 @@ export default function Product() {
     try {
       console.log(`${NODE_APP}/product/${productId}`);
 
-      await axios.put(`${NODE_APP}/product/${productId}`, { borrowed: true });
+      await axios.put(`${NODE_APP}/product/${productId}`);
     } catch (err) {
       console.log(err);
     }

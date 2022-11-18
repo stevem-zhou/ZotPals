@@ -1,5 +1,6 @@
 require("dotenv").config();
 
+const nodeMailer = require('nodemailer');
 const express = require("express");
 const { MongoError } = require("mongodb");
 const app = express();
@@ -7,9 +8,6 @@ const mongoose = require("mongoose");
 const { reset } = require("nodemon");
 const itemListing = require("./models/itemListing_model");
 const cors = require("cors");
-const token = require('./models/token');
-const sendEmail = require('./routes/sendEmail');
-const crypto = require('crypto');
 
 mongoose.connect(process.env.DB_URL, {
   useNewUrlParser: true,
@@ -62,13 +60,40 @@ app.get("/product/:id", async function (req, res) {
 });
 
 // connected
-// product page put request
+// product page put send email request
 app.put("/product/:id", async function (req, res) {
   const { id } = req.params;
+  const item = await itemListing.findById(id);
+  const email = item.contactInfo;
+
+  const transporter = nodeMailer.createTransport({
+    service: process.env.SERVICE,
+    auth: {
+      user: process.env.USER,
+      pass: process.env.PASSWORD
+    }
+  });
+
+  const options = {
+    from: process.env.HOST,
+    to: `${email}`,
+    subject: "Verify item being borrowed",
+    text: "hello this is the email text"
+  }
+
+  transporter.sendMail(options, function(err, info){
+    if(err){
+      console.log(err);
+      return;
+    }
+    console.log("Sent: " + info.response);
+  })
+
   const updateBool = await itemListing.findByIdAndUpdate(id, {
     borrowed: true,
   });
-  res.send(updateBool);
+
+  // res.send(email);
 });
 
 // connected

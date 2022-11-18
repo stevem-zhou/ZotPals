@@ -2,6 +2,7 @@ import React from "react";
 import { Items } from "../Components/exploreComponents/Items.js";
 import CardList from "../Components/exploreComponents/CardList";
 import "tachyons";
+import "./explore2.css";
 
 const explore2 = () => {
   return (
