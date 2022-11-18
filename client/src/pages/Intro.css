@@ -1,0 +1,39 @@
+body {
+  /* font-family: "Inter"; */
+  font-family: "Playfair Display", serif;
+
+  background-color: #fad6a5;
+}
+.intro-img {
+  width: 50%;
+}
+
+.carousel-intro {
+  background-color: #9ba17b;
+  margin: 5% 20%;
+  margin-bottom: 1%;
+  border-radius: 20%;
+}
+
+.carousel-item {
+  text-align: center;
+  padding: 7%;
+}
+.home-btn {
+  font-family: "Varela Round", serif;
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5%;
+}
+
+.intro-div {
+  text-align: center;
+}
