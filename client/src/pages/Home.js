@@ -28,9 +28,9 @@ export default function Home() {
     <>
       <div className="container">
         <div className="container-text">
-          <h1><br/>THE PLATFORM FOR ANTEATER STYLE</h1>
+          <h1><br />THE PLATFORM FOR ANTEATER STYLE</h1>
           <p>
-          Borrow, trade, discover authenticated pieces from top anteaters like yourselves
+            Borrow, trade, discover authenticated pieces from top anteaters like yourselves
           </p>
         </div>
         <img
@@ -40,7 +40,7 @@ export default function Home() {
         />
       </div>
       <div className="latestText">
-        <p>Check out the latest anteater posts, the newest, right now: </p>
+        <p>Check out the latest anteater posts, the newest, right now: <br />  </p>
       </div>
       <div className="posting">
         {itemListing.map((ele) => {
