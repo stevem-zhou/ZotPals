@@ -1,6 +1,6 @@
 require("dotenv").config();
 
-const nodeMailer = require('nodemailer');
+const nodeMailer = require("nodemailer");
 const express = require("express");
 const { MongoError } = require("mongodb");
 const app = express();
@@ -20,7 +20,6 @@ db.once("open", () => console.log("Connected to Database"));
 
 app.use(express.json());
 app.use(cors());
-
 
 // connected
 // explore get request
@@ -51,6 +50,16 @@ app.post("/post", async function (req, res) {
   res.status(200).send(newItem);
 });
 
+//verification put request
+app.put("/verification/:id", async function (req, res) {
+  const { id } = req.params;
+  const updateBool = await itemListing.findByIdAndUpdate(id, {
+    borrowed: true,
+  });
+
+  res.send(updateBool);
+});
+
 // connected
 // productpage get request
 app.get("/product/:id", async function (req, res) {
@@ -70,30 +79,26 @@ app.put("/product/:id", async function (req, res) {
     service: process.env.SERVICE,
     auth: {
       user: process.env.USER,
-      pass: process.env.PASSWORD
-    }
+      pass: process.env.PASSWORD,
+    },
   });
 
   const options = {
     from: process.env.HOST,
     to: `${email}`,
     subject: "Verify item being borrowed",
-    text: "hello this is the email text"
-  }
+    html: "http://localhost:3000/verification/" + id,
+  };
 
-  transporter.sendMail(options, function(err, info){
-    if(err){
+  transporter.sendMail(options, function (err, info) {
+    if (err) {
       console.log(err);
       return;
     }
     console.log("Sent: " + info.response);
-  })
-
-  const updateBool = await itemListing.findByIdAndUpdate(id, {
-    borrowed: true,
   });
 
-  // res.send(email);
+  res.send(id);
 });
 
 // connected
