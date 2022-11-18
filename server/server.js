@@ -2,13 +2,13 @@ require("dotenv").config();
 
 const nodeMailer = require("nodemailer");
 const express = require("express");
-const { MongoError } = require("mongodb");
+// const { MongoError } = require("mongodb");
 const app = express();
 const mongoose = require("mongoose");
-const { reset } = require("nodemon");
+// const { reset } = require("nodemon");
 const itemListing = require("./models/itemListing_model");
 const cors = require("cors");
-const { update } = require("./models/itemListing_model");
+// const { update } = require("./models/itemListing_model");
 
 mongoose.connect(process.env.DB_URL, {
   useNewUrlParser: true,
@@ -25,7 +25,7 @@ app.use(cors());
 // connected
 // explore get request
 app.get("/explore", async function (req, res) {
-  const items = await itemListing.find();
+  const items = await itemListing.find({borrowed: false});
   res.send(items);
 });
 
@@ -106,7 +106,7 @@ app.put("/product/:id", async function (req, res) {
 // home get request
 app.get("/home", async function (req, res) {
   // get the top three
-  const items = await itemListing.find({});
+  const items = await itemListing.find({borrowed: false});
   let first, second, third;
   for (let i = 0; i < items.length; i++) {
     if (i == items.length - 3) {
