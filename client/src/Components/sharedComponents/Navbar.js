@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <nav className="navbar1">
       <div className="nav-brand-text">
-        <Link to="/home">
+        <Link to="/">
           {/* <p>AntTrade</p> */}
           <img
             className="logo"
