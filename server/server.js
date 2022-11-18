@@ -7,9 +7,9 @@ const mongoose = require("mongoose");
 const { reset } = require("nodemon");
 const itemListing = require("./models/itemListing_model");
 const cors = require("cors");
-const token = require('./models/token');
-const sendEmail = require('./routes/sendEmail');
-const crypto = require('crypto');
+// const token = require('./models/token');
+// const sendEmail = require('./routes/sendEmail');
+// const crypto = require('crypto');
 
 mongoose.connect(process.env.DB_URL, {
   useNewUrlParser: true,
