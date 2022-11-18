@@ -8,6 +8,7 @@ const itemSchema = new mongoose.Schema({
     duration: String,
     date: String,
     borrowed: {type: Boolean, default:false},
+    comments: {type: Array, default:[]},
 })
 
 const Item = mongoose.model('Item', itemSchema);
