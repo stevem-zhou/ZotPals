@@ -10,6 +10,7 @@ import Post from "./pages/Post";
 import About from "./pages/About";
 import Product from "./pages/Product";
 import Verification from "./pages/Verification";
+import Intro from "./pages/Intro";
 
 function App() {
   // let x = data.map(function (element) {
@@ -23,7 +24,8 @@ function App() {
       <Navbar />
       <div>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Intro />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/post" element={<Post />} />
           <Route path="/about" element={<About />} />

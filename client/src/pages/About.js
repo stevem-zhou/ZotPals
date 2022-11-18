@@ -12,13 +12,16 @@ const About = () => {
   return (
     <>
       <div className="tc">
-        <h1>About Us</h1>
-        <p>
+        <div className="aboutBlock">
+        <h1 id="aboutUsHead">About Us</h1>
+        <p id="aboutUsDesc">
           Focused on creating a community where we are able to create <br />
           relationships and ease the hardships that Anteaters face, we as <br />
           creators, have developed an easy-to-use platform with inspiration from<br />
           the barter system of trade.
         </p>
+        </div>
+        
         <CardList Members={Members} />
       </div>
       <Footer />

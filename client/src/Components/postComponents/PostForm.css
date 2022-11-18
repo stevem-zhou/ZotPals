@@ -34,6 +34,12 @@
   border-radius: 4px;
   background-color: #e2dac2;
   margin-bottom: 20px;
+  height: 50px;
+}
+
+#photo-submitted {
+  height: 200px;
+  margin-bottom: 20px;
 }
 
 #name,
@@ -50,7 +56,7 @@
 
 #post,
 #photoBtn {
-  background-color: #d4d2ce00;
+  background-color: #9ba17b;
   border-radius: 4px;
   width: auto;
   height: 50px;
@@ -58,7 +64,7 @@
 }
 
 #post:hover {
-  background-color: #d4d2cea4;
+  background-color: #bfc59e;
   transition: 200ms;
   cursor: pointer;
 }

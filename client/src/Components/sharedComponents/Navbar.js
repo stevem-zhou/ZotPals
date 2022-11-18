@@ -4,11 +4,15 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="navbar">
+    <nav className="navbar1">
       <div className="nav-brand-text">
-        <img className="logo" src="images/banana.png" alt="" />
-        <Link to="/">
-          <p>AntTrade</p>
+        <Link to="/home">
+          {/* <p>AntTrade</p> */}
+          <img
+            className="logo"
+            src={require("../../images/zotpals.png")}
+            alt=""
+          />
         </Link>
       </div>
 

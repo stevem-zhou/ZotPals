@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./PostForm.css";
+import { Link } from "react-router-dom";
 
 const NODE_APP = "http://localhost:3001";
 
 export default function PostForm() {
   const [name, setName] = useState();
-  const [image, setImage] = useState();
+  const [image, setImage] = useState(
+    "https://media.discordapp.net/attachments/1036369852207738960/1043255229535223918/Add_a_heading.png?width=1042&height=1042"
+  );
   const [description, setDescription] = useState();
   const [contactInfo, setContactInfo] = useState();
   const [firstName, setfirstName] = useState();
@@ -21,7 +24,7 @@ export default function PostForm() {
       contactInfo: contactInfo,
       duration: duration,
       firstName: firstName,
-      lastName: lastName
+      lastName: lastName,
     });
   }
 
@@ -82,7 +85,7 @@ export default function PostForm() {
           required
         />
         <div className="imageContainer">
-          <img id="photo" src={image} alt="Waiting on Image" />
+          <img id="photo-submitted" src={image} alt="Waiting on Image" />
         </div>
 
         {/* <input onChange={updateImage}
@@ -142,15 +145,18 @@ export default function PostForm() {
           required
         >
           <option value="">--Please choose an option--</option>
-          <option value="oneDay">1 Day</option>
-          <option value="twothreeDay">2-3 Days</option>
-          <option value="fourfiveDay">4-5 Days</option>
-          <option value="sixsevenDay">6-7 Days</option>
+          <option value="1">1 Day</option>
+          <option value="2">2 Days</option>
+          <option value="3">3 Days</option>
+          <option value="4">4 Days</option>
+          <option value="5">5 Days</option>
+          <option value="6">6 Days</option>
+          <option value="7">7 Days</option>
         </select>
 
-        <button type="submit" id="post">
-          POST
-        </button>
+          <button type="submit" id="post">
+            POST
+          </button>
       </form>
     </section>
   );

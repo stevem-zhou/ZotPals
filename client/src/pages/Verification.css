@@ -1,0 +1,42 @@
+.text {
+  font-family: "Varela Round";
+  background-color: #8a705d;
+  border-radius: 2em;
+  width: 70%;
+  margin-left: 15%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text h1 {
+  font-size: 30px;
+  background-color: #c59e83;
+  border-radius: 2em;
+  width: 40%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 1%;
+}
+
+.text p {
+  font-size: 20px;
+  background-color: #c59e83;
+  border-radius: 2em;
+  width: 50%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border-radius: 10;
+}

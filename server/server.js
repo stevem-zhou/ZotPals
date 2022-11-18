@@ -31,9 +31,7 @@ app.get("/explore", async function (req, res) {
 app.post("/post", async function (req, res) {
   const dateObj = new Date();
   const currentDate =
-    dateObj.getMonth().toString() +
-    dateObj.getDate().toString() +
-    dateObj.getFullYear().toString();
+    dateObj.toDateString();
 
   const newItem = new itemListing({
     name: req.body.name,
@@ -99,7 +97,6 @@ app.put("/product/:id", async function (req, res) {
     from: process.env.HOST,
     to: `${email}`,
     subject: "Verify item being borrowed",
-    // text: "`Hello ${name}, please click on the link to confirm that your item is being borrowed!`",
     html: `Hello ${name}, please click on the link to confirm that your item is being borrowed! ` + "http://localhost:3000/verification/" + id,
   };
 

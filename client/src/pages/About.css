@@ -4,7 +4,42 @@
 
 .tc{
   font-family: "Varela Round", serif;
+  
+}
 
+.aboutBlock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #8a705d;
+  margin: auto;
+  width: 900px;
+  height: 250px;
+  border-radius: 2em;
+  padding-bottom: 5px;
+}
+
+#aboutUsHead{
+  background-color: #c59e83;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+  border-radius: 2em;
+
+}
+
+#aboutUsDesc{
+  background-color: #c59e83;
+  width: 800px;
+  height: 150px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2em;
 }
 
 .tc p {

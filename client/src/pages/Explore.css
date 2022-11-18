@@ -13,6 +13,8 @@ body {
   margin-top: 12px;
   flex: 1 1 auto;
   margin: 0 10%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 /* .tc {

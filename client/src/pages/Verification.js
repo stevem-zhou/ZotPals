@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import "./Verification.css";
 
 const NODE_APP = "http://localhost:3001";
 
@@ -21,7 +22,15 @@ const Verification = () => {
 
   return (
     <>
-      <h1>verified</h1>
+      <div className="text">
+        <h1>Confirmation</h1>
+        <p>Your item has been borrowed. </p>
+      </div>
+      <br />
+      <img
+        src="https://cdn.discordapp.com/attachments/1036369852207738960/1043267770885873714/Eo_circle_green_checkmark.svg.png"
+        class="img"
+      />
     </>
   );
 };

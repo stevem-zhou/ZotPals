@@ -1,14 +1,17 @@
-.outerPostBox:active {
+.outerPostBox:hover {
   display: inline-flex;
+  flex-wrap: nowrap;
   flex-direction: column;
   align-items: center;
-  background-color: #CFB997;
+  background-color: #cfb997;
   width: 270px;
   height: 350px;
+  border-color: white;
+  border-width: 200px;
   border-radius: 5%;
   box-shadow: 5px 5px 7.4564px rgba(0, 0, 0, 0.1);
   margin: 0% 20;
-  gap: 50rem;
+  gap: 3rem;
 }
 
 .innerPostBox {
@@ -27,7 +30,7 @@
 .caption {
   text-align: center;
   margin-top: 10px;
-  background-color: #FAD6A5;
+  background-color: #fad6a5;
   height: 75px;
   display: flex;
   justify-content: center;
@@ -42,13 +45,12 @@ a {
   color: inherit;
 }
 
-.name{
+.name {
   font-family: "Varela Round", serif;
   font-weight: bold;
   margin: 0;
 }
 
-.duration{
+.duration {
   font-family: "Nunito", serif;
-
 }
