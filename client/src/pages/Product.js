@@ -64,7 +64,7 @@ export default function Product() {
           <h3>Duration: {listings.duration}</h3>
           <h3>Contact: {listings.contact}</h3>
 
-          <p>{listings.description}</p>
+          <p id="description">{listings.description}</p>
 
           <button onClick={updateBorrow} className="info-btn">
             ZOT???

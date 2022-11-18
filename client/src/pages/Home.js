@@ -24,12 +24,13 @@ export default function Home() {
     },
     [itemListing]
   );
+
   return (
     <>
       <div className="container">
         <div className="container-text">
           <h1><br />THE PLATFORM FOR ANTEATER STYLE</h1>
-          <p>
+          <p id="underText">
             Borrow, trade, discover authenticated pieces from top anteaters like yourselves
           </p>
         </div>
@@ -40,7 +41,7 @@ export default function Home() {
         />
       </div>
       <div className="latestText">
-        <p>Check out the latest anteater posts, the newest, right now: <br />  </p>
+        <p id="latestText">Check out the latest anteater posts, the newest, right now: <br />  </p>
       </div>
       <div className="posting">
         {itemListing.map((ele) => {

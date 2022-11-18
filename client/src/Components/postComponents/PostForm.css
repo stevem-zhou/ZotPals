@@ -1,85 +1,92 @@
-#listText{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+#listText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.collectorBox{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+.collectorBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito", serif;
 }
 
-.infoForm{
-    display: flex;
-    flex-direction: column;
+.infoForm {
+  display: flex;
+  flex-direction: column;
 
-    width: 500px;
+  width: 500px;
 }
 
-#photo{
-    max-width: 200px;
-    max-height: 200px;
+#photo {
+  max-width: 200px;
+  max-height: 200px;
 }
 
-#photo, #photoinput, #description, #name, #contactInfo, #duration{
-
-    border: 1px solid #d4d2cea4;
-    border-radius: 4px;
-    background-color: #e2dac2;
-    margin-bottom: 20px;
+#photo,
+#photoinput,
+#description,
+#name,
+#contactInfo,
+#duration {
+  border: 1px solid #d4d2cea4;
+  border-radius: 4px;
+  background-color: #e2dac2;
+  margin-bottom: 20px;
 }
 
-#name, #duration{
-    width: auto;
-    height: 50px;
+#name,
+#duration {
+  width: auto;
+  height: 50px;
 }
 
-#description, #name, #contactInfo{
-    font-size: 15px;
+#description,
+#name,
+#contactInfo {
+  font-size: 15px;
 }
 
-#post, #photoBtn{
-    background-color: #d4d2ce00;
-    border-radius: 4px;
-    width: auto;
-    height: 50px;
-    font-weight: 100;
+#post,
+#photoBtn {
+  background-color: #d4d2ce00;
+  border-radius: 4px;
+  width: auto;
+  height: 50px;
+  font-weight: 100;
 }
 
-#post:hover{
-    background-color: #d4d2cea4;
-    transition: 200ms;
-    cursor: pointer;
+#post:hover {
+  background-color: #d4d2cea4;
+  transition: 200ms;
+  cursor: pointer;
 }
 
-#duration{
-    width: auto;
-    height: 50px;
+#duration {
+  width: auto;
+  height: 50px;
 }
 
-#btnBox{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#btnBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#photoBtn{
-    margin-bottom: 20px;
-    width: 150px;
+#photoBtn {
+  margin-bottom: 20px;
+  width: 150px;
 }
 
-#photoBtn:hover{
-    background-color: #d4d2cea4;
-    transition: 200ms;
-    cursor: pointer;
+#photoBtn:hover {
+  background-color: #d4d2cea4;
+  transition: 200ms;
+  cursor: pointer;
 }
 
-.imageContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

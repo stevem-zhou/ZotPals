@@ -2,8 +2,15 @@
   align-items: center;
 } */
 
+.tc{
+  font-family: "Varela Round", serif;
+
+}
+
 .tc p {
   margin-left: 30px;
   margin-right: 30px;
   font-size: 20px;
+  font-family: "Nunito", serif;
+  
 }

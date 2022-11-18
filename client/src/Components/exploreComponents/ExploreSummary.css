@@ -1,9 +1,32 @@
+.body {
+  display: flex;
+}
+
 .summary {
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
+  justify-content: center;
   box-shadow: 5px 5px 7.4564px rgba(0, 0, 0, 0.1);
   margin-bottom: 25px;
+  font-family: "Varela Round", serif;
+  background-color: #8a705d;
+  border-radius: 2em;
+  padding-top: 15px;
+  height: 250px;
+  width: 900px;
+  margin: auto
+}
+
+.summary h2 {
+  background-color: #c59e83;
+  border-radius: 2em;
+  width: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
 }
 
 .summary p {
@@ -11,4 +34,12 @@
   margin-right: 30px;
   font-size: 18px;
   align-content: center;
+  font-family: "Nunito", serif;
+  background-color: #c59e83;
+  border-radius: 2em;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110px;
 }

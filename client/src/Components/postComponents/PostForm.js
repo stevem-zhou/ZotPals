@@ -9,6 +9,8 @@ export default function PostForm() {
   const [image, setImage] = useState();
   const [description, setDescription] = useState();
   const [contactInfo, setContactInfo] = useState();
+  const [firstName, setfirstName] = useState();
+  const [lastName, setlastName] = useState();
   const [duration, setDuration] = useState();
 
   function uploadInfo() {
@@ -18,6 +20,8 @@ export default function PostForm() {
       description: description,
       contactInfo: contactInfo,
       duration: duration,
+      firstName: firstName,
+      lastName: lastName
     });
   }
 
@@ -34,6 +38,16 @@ export default function PostForm() {
   function updateDescription(event) {
     event.preventDefault();
     setDescription(event.target.value);
+  }
+
+  function updatefirstName(event) {
+    event.preventDefault();
+    setfirstName(event.target.value);
+  }
+
+  function updatelastName(event) {
+    event.preventDefault();
+    setlastName(event.target.value);
   }
 
   function updateContactInfo(event) {
@@ -60,19 +74,15 @@ export default function PostForm() {
         />
         <p>Enter Item Photo URL:</p>
         <input
-            onChange={updateImage}
-            type="url"
-            id="photoinput"
-            name="image"
-            accept="image/jpeg, image/png, image/jpg"
-            required
-          />
+          onChange={updateImage}
+          type="url"
+          id="photoinput"
+          name="image"
+          accept="image/jpeg, image/png, image/jpg"
+          required
+        />
         <div className="imageContainer">
-          <img
-            id="photo"
-            src={require("../../images/mouse_eat.png")}
-            alt="mouse eat alone"
-          />
+          <img id="photo" src={image} alt="Waiting on Image" />
         </div>
 
         {/* <input onChange={updateImage}
@@ -94,8 +104,27 @@ export default function PostForm() {
           required
         ></textarea>
 
-        <label for="contactInfo">Contact Information (Email):</label>
+        <label for="firstName">First Name:</label>
         <br />
+        <input
+          type="text"
+          onChange={updatefirstName}
+          name="firstName"
+          id="contactInfo"
+          required
+        ></input>
+
+        <label for="lastName">Last Name:</label>
+
+        <input
+          type="text"
+          onChange={updatelastName}
+          name="lastName"
+          id="contactInfo"
+          required
+        ></input>
+        <label for="contactInfo">Contact Information (Email):</label>
+
         <input
           type="email"
           onChange={updateContactInfo}

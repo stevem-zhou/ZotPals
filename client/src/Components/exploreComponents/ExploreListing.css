@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #CFB997;
-  width: 300px;
+  width: 270px;
   height: 350px;
   border-radius: 5%;
   box-shadow: 5px 5px 7.4564px rgba(0, 0, 0, 0.1);
@@ -40,4 +40,15 @@
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.name{
+  font-family: "Varela Round", serif;
+  font-weight: bold;
+  margin: 0;
+}
+
+.duration{
+  font-family: "Nunito", serif;
+
 }

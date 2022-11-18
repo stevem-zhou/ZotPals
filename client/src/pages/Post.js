@@ -7,8 +7,8 @@ import axios from "axios";
 export default function Post() {
   return (
     <body>
-      <div id="listText">
-        <h3>List an Item</h3>
+      <div>
+        <h3 id="listText">List an Item</h3>
       </div>
       <PostForm />
       <Footer />

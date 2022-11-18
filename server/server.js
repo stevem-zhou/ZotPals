@@ -22,7 +22,7 @@ app.use(cors());
 // connected
 // explore get request
 app.get("/explore", async function (req, res) {
-  const items = await itemListing.find({borrowed: false});
+  const items = await itemListing.find({borrowed: false}).sort({_id:-1});
   res.send(items);
 });
 
@@ -40,6 +40,8 @@ app.post("/post", async function (req, res) {
     image: req.body.image,
     description: req.body.description,
     contactInfo: req.body.contactInfo,
+    firstName: req.body.firstName,
+    lastName: req.body.lastName,
     duration: req.body.duration,
     date: currentDate,
   });
@@ -83,6 +85,7 @@ app.put("/product/:id", async function (req, res) {
   const { id } = req.params;
   const item = await itemListing.findById(id);
   const email = item.contactInfo;
+  const name = item.firstName + " " + item.lastName
 
   const transporter = nodeMailer.createTransport({
     service: process.env.SERVICE,
@@ -96,7 +99,8 @@ app.put("/product/:id", async function (req, res) {
     from: process.env.HOST,
     to: `${email}`,
     subject: "Verify item being borrowed",
-    html: "http://localhost:3000/verification/" + id,
+    // text: "`Hello ${name}, please click on the link to confirm that your item is being borrowed!`",
+    html: `Hello ${name}, please click on the link to confirm that your item is being borrowed! ` + "http://localhost:3000/verification/" + id,
   };
 
   transporter.sendMail(options, function (err, info) {
@@ -115,21 +119,21 @@ app.put("/product/:id", async function (req, res) {
 app.get("/home", async function (req, res) {
   // get the top three
   const items = await itemListing.find({borrowed: false});
-  let first, second, third;
-  for (let i = 0; i < items.length; i++) {
-    if (i == items.length - 3) {
-      first = items[i];
-    }
-    if (i == items.length - 2) {
-      second = items[i];
-    }
-    if (i == items.length - 1) {
-      third = items[i];
-    }
-  }
+  // let first, second, third;
+  // for (let i = 0; i < items.length; i++) {
+  //   if (i == items.length - 3) {
+  //     first = items[i];
+  //   }
+  //   if (i == items.length - 2) {
+  //     second = items[i];
+  //   }
+  //   if (i == items.length - 1) {
+  //     third = items[i];
+  //   }
+  // }
 
-  let top_three = [first, second, third];
-  res.send(top_three);
+  // let top_three = [first, second, third];
+  res.send(items.slice(items.length-3).reverse());
 });
 
 app.put("/explore", async function (req, res) {

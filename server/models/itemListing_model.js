@@ -5,6 +5,8 @@ const itemSchema = new mongoose.Schema({
     image: String,
     description: String,
     contactInfo: String,
+    firstName: String,
+    lastName: String,
     duration: String,
     date: String,
     borrowed: {type: Boolean, default:false},

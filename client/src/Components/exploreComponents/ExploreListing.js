@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./ExploreListing.css";
 import { Link } from "react-router-dom";
-import 'tachyons';
+import "tachyons";
 
 // eventually use props and replace the string inside the require src
 export default function ExploreListing(props) {
@@ -17,10 +17,8 @@ export default function ExploreListing(props) {
           <section className="caption">
             {/* make the item_info below changeable for each loop */}
 
-            <p>
-              {props.name} <br />
-              {props.date}
-            </p>
+            <p className="name">{props.name}</p>
+            <p className="duration">{props.date}</p>
           </section>
         </section>
       </section>

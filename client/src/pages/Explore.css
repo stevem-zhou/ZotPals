@@ -2,8 +2,7 @@ body {
   /* font-family: "Inter"; */
   background-color: #fff5d9;
   /* font-family: "Raleway", sans-serif; */
-  font-family: "Playfair Display", serif;
-
+  font-family: "Varela Round", serif;
 }
 
 .posting {
@@ -16,9 +15,9 @@ body {
   margin: 0 10%;
 }
 
-.tc {
+/* .tc {
   margin-left: 30px;
   margin-right: 30px;
   font-size: 20px;
   padding-bottom: 30px;
-}
+} */

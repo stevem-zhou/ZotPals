@@ -56,8 +56,13 @@ body {
 .info-container {
   display: flex;
   justify-content: center;
-}
+  font-family: "Varela Round", serif;
 
+}
+#description{
+  font-family: "Nunito", serif;
+
+}
 .info-img {
   width: 30%;
   border-radius: 10%;
@@ -114,6 +119,7 @@ body {
 .infoForm{
   display: flex;
   margin-bottom: 10%;
+  
 }
 
 .comment-btn{
