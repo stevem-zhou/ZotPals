@@ -3,7 +3,7 @@ export const Members =[//data for member, use in cardlist
   {id:1,
     name:"Steven Zhou",
     email:"stevenz9@uci.edu",
-    img:"https://cdn.discordapp.com/attachments/1036369852207738960/1042155964708687922/7EA4D122-9F52-4888-918C-246D88196BF9.jpg"
+    img:"https://media.discordapp.net/attachments/1036369852207738960/1042160741513445487/steven.jpeg?width=1336&height=1336"
   },
    {id:2,
     name:"Dang Nguyen Nguyen",
@@ -13,12 +13,12 @@ export const Members =[//data for member, use in cardlist
   {id:3,
     name:"Katy Huang",
     email:"katyh1@uci.edu",
-    img:"https://cdn.discordapp.com/attachments/922724385809371198/1042892943100481667/573F282A-037B-47E0-8184-6A21617F35D5.jpg"
+    img:"https://cdn.discordapp.com/attachments/922724385809371198/1042904509212528691/63DE43B1-1CF6-4DBF-991D-7F59F1360300.jpg"
   },
   {
     id:4,
     name:"Jessie He",
     email:"jessieh9@uci.edu",
-    img:"https://cdn.discordapp.com/attachments/1036369852207738960/1042157527200170004/IMG_2170.jpg"
+    img:"https://cdn.discordapp.com/attachments/908567543915110420/1042906710945304676/IMG_1922.jpg"
   },
 ]

@@ -13,3 +13,10 @@ body {
   flex: 1 1 auto;
   margin: 0 10%;
 }
+
+.tc {
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
