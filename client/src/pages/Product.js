@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import "./Product.css";
 import axios from "axios";
 
-const NODE_APP = "http://localhost:3001";
+const NODE_APP = "https://zotpals.herokuapp.com/";
 
 export default function Product() {
   const { productId } = useParams();

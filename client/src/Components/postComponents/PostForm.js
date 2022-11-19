@@ -3,7 +3,7 @@ import axios from "axios";
 import "./PostForm.css";
 import { Link } from "react-router-dom";
 
-const NODE_APP = "http://localhost:3001";
+const NODE_APP = "https://zotpals.herokuapp.com/";
 
 export default function PostForm() {
   const [name, setName] = useState();
