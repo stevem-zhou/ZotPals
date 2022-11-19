@@ -21,9 +21,6 @@ export default function Navbar() {
         <Link className="nav-cata-link" to="/home">
           <p>Home</p>
         </Link>
-        <Link id="home" className="nav-cata-link" to="/home">
-          <p>Home</p>
-        </Link>
         <Link className="nav-cata-link" to="/explore">
           <p>Explore</p>
         </Link>
