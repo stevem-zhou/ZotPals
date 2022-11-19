@@ -1,5 +1,3 @@
-require("dotenv").config();
-
 const nodeMailer = require("nodemailer");
 const express = require("express");
 const app = express();
@@ -7,7 +5,7 @@ const mongoose = require("mongoose");
 const itemListing = require("./models/itemListing_model");
 const cors = require("cors");
 
-const PORT = process.env.PORT || 5000
+let port = process.env.PORT || 3001;
 
 mongoose.connect(process.env.DB_URL, {
   useNewUrlParser: true,
@@ -20,14 +18,6 @@ db.once("open", () => console.log("Connected to Database"));
 
 app.use(express.json());
 app.use(cors());
-
-if (process.env.NODE_ENV === 'production'){
-  app.use(express.static('client/build'))
-}
-
-app.listen(PORT, async(req, res) => {
-  console.log(`Server listening on http://localhost${PORT}`)
-})
 
 // connected
 // explore get request
@@ -195,6 +185,6 @@ app.delete("/explore", async function (req, res) {
   res.send(items);
 });
 
-app.listen(3001, function () {
+app.listen(port, function () {
   console.log("Server Started");
 });
