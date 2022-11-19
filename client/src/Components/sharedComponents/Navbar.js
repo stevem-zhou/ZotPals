@@ -18,6 +18,9 @@ export default function Navbar() {
 
       <div class="nav-cata-text">
         {/* figure out the hrefs to work with react --> routing to different pages */}
+        <Link className="nav-cata-link" to="/home">
+          <p>Home</p>
+        </Link>
         <Link id="home" className="nav-cata-link" to="/home">
           <p>Home</p>
         </Link>
