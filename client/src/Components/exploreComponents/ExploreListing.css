@@ -14,6 +14,18 @@
   gap: 3rem;
 }
 
+
+.outerPostBox{
+  /* background-color: #c59e83; */
+
+  width: 270px;
+  height: 350px;
+  flex-direction: column;
+  align-items: center;
+  display: inline-flex;
+  border-radius: 5%;
+
+}
 .innerPostBox {
   display: flex;
   flex-direction: column;

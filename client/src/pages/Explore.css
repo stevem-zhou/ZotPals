@@ -10,11 +10,15 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 12px;
   flex: 1 1 auto;
-  margin: 0 10%;
+  margin: 5% 10%;
   padding-left: 5%;
   padding-right: 5%;
+  /* background-color: #8a705d; */
+  border-radius: 5%;
+  /* box-shadow: 5px 5px 7.4564px rgba(0, 0, 0, 0.1); */
+
+
 }
 
 /* .tc {

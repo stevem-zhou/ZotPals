@@ -13,7 +13,7 @@ export const Members =[//data for member, use in cardlist
   {id:3,
     name:"Katy Huang",
     email:"katyh1@uci.edu",
-    img:"https://cdn.discordapp.com/attachments/922724385809371198/1042904509212528691/63DE43B1-1CF6-4DBF-991D-7F59F1360300.jpg"
+    img:"https://cdn.discordapp.com/attachments/1036369852207738960/1043307363412738098/496374D2-7855-4469-B245-35D428427A35.jpg"
   },
   {
     id:4,
