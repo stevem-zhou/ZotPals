@@ -1,6 +1,5 @@
 .logo {
   width: 150px;
-  /* max-width: 200%; */
   margin-left: 30%;
 }
 
@@ -15,9 +14,6 @@
   top: 0px;
   background-color: #9ba17b;
   font-family: "Varela Round";
-
-  /* background-color:rgb(235,232,209); */
-  /* background-color: rgb(244, 244, 213); */
 }
 
 .nav-cata-text {
