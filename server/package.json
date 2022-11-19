@@ -14,7 +14,8 @@
     "nodemon": "^2.0.20"
   },
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "name": "server",
   "version": "1.0.0",

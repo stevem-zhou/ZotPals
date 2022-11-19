@@ -29,7 +29,7 @@ export default function Home() {
     <>
       <div className="container">
         <div className="container-text">
-          <h1><br />THE PLATFORM FOR ANTEATER STYLE</h1>
+          <h1><br />THE PLATFORM FOR ANTEATERS</h1>
           <p id="underText">
             Borrow, trade, discover authenticated pieces from top anteaters like yourselves
           </p>

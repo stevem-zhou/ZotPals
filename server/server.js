@@ -7,6 +7,8 @@ const mongoose = require("mongoose");
 const itemListing = require("./models/itemListing_model");
 const cors = require("cors");
 
+const PORT = process.env.PORT || 5000
+
 mongoose.connect(process.env.DB_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -18,6 +20,14 @@ db.once("open", () => console.log("Connected to Database"));
 
 app.use(express.json());
 app.use(cors());
+
+if (process.env.NODE_ENV === 'production'){
+  app.use(express.static('client/build'))
+}
+
+app.listen(PORT, async(req, res) => {
+  console.log(`Server listening on http://localhost${PORT}`)
+})
 
 // connected
 // explore get request
