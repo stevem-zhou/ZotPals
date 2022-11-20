@@ -5,7 +5,7 @@ import Footer from "../Components/sharedComponents/Footer";
 import axios from "axios";
 
 export default function Home() {
-  const NODE_APP = "https://zotpals.herokuapp.com/";
+  const NODE_APP = "https://zotpals.herokuapp.com";
 
   const [itemListing, setItem] = useState([]);
 

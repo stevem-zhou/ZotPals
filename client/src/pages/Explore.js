@@ -9,7 +9,7 @@ export default function Explore() {
   // axios.get("http://localhost:3001/explore").then(res=>{
   //   console.log("test");
   // })
-  const NODE_APP = "https://zotpals.herokuapp.com/";
+  const NODE_APP = "https://zotpals.herokuapp.com";
 
   const [itemListing, setItem] = useState([]);
 

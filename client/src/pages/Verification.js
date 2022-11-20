@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./Verification.css";
 
-const NODE_APP = "https://zotpals.herokuapp.com/";
+const NODE_APP = "https://zotpals.herokuapp.com";
 
 const Verification = () => {
   const { productId } = useParams();
