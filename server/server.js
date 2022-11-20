@@ -97,7 +97,7 @@ app.put("/product/:id", async function (req, res) {
     from: process.env.HOST,
     to: `${email}`,
     subject: "Verify item being borrowed",
-    html: `Hello ${name}, please click on the link to confirm that your item is being borrowed! ` + "http://localhost:3000/verification/" + id,
+    html: `Hello ${name}, please click on the link to confirm that your item is being borrowed! ` + "https://main--symphonious-sunburst-40f1c0.netlify.app/verification/" + id,
   };
 
   transporter.sendMail(options, function (err, info) {
