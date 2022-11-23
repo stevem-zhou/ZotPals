@@ -30,3 +30,9 @@ Upon clicking one of the items, it will take you to its Product page, which disp
 The Post Page will display a form where the user can enter all the necessary and required information about their items and contact information, which will then display their donation on the Home and Explore pages. 
 ### About
 Lastly, the About Us Page which shows the lovely creators of this website and our email-addresses.
+
+## How We Built It
+The web app consists React, HTML, CSS, JS for the frontend. While using Express, Nodemailer, and MongoDB for the backend. We created a database using MongoDB which stores all the information that the post form provides. Through this database, we are able to get the information about the owner's contact information which we will use with nodemailer to send individual emails with verification links about the donated item.
+
+## Challenges We Faced
+There were many challenges we faced when building this website. Everything we used to create the web app was new to many of us, and we only had four days to learn all of it before submitting the project. There were many ideas that were brilliant such as creating an account system to verify each item and having a proper way to communicate with the owner through private messages, however time was very limited and we all had little to no experience, so we srapped the idea and went for the email feature. Even though there were many challenges, we were able to overcome each one and in the end completed a web app that we are proud of sharing.
