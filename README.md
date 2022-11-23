@@ -1,6 +1,7 @@
 # WebJam2022
 <p>A website that allows students to borrow donated items and build long-lasting connections with one another.</p>
 <p>Visit the website here: https://zotpals.netlify.app/</p>
+<img src="client/src/images/zotpalslogo.png" width="200px"/>
 
 ## Table of Contents
 + [Inspiration](#inspiration)<br>
@@ -11,7 +12,8 @@
   + [Product](#product)<br>
   + [Post](#post)<br>
   + [About](#about)<br>
-
++ [How We Built It](#how-we-built-it)<br>
++ [Challenges We Faced](#challenges-we-faced)<br>
 
 ## Inspiration
 We are all college students and have experience the struggles of not having the neccessary funds to purchase items that we actually need in our day to day life. So, we wanted to create a platform that will address this, in hope that it will also support other students that may be going through the same experiences. We also know that building connections may be difficult and wanted to provide a new way for friendships and relationships to grow.
