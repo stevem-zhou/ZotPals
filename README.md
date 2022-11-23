@@ -1,7 +1,7 @@
 # WebJam2022
 <p>A website that allows students to borrow donated items and build long-lasting connections with one another.</p>
 <p>Visit the website here: https://zotpals.netlify.app/</p>
-<img src="client/src/images/zotpalslogo.png" width="200px"/>
+<img src="https://cdn.discordapp.com/attachments/918312671533727855/1045093125779099738/unknown.png" width="210px"/>
 
 ## Table of Contents
 + [Inspiration](#inspiration)<br>
